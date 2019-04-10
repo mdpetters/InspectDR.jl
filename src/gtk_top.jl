@@ -143,8 +143,8 @@ function PlotWidget(plot::Plot)
 		value_pos(w_xpos, Int(GtkPositionType.GTK_POS_RIGHT))
 
 	push!(vbox, canvas)
-	push!(vbox, w_xpos)
-	push!(vbox, w_xscale)
+	#push!(vbox, w_xpos)
+	#push!(vbox, w_xscale)
 
 	w = width(canvas); h = height(canvas)
 	plotbuf = CairoBufferedPlot(
